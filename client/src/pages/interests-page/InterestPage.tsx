@@ -57,6 +57,17 @@ function InterestPage() {
               );
             }
           )}
+          <input
+            className="bg-[#E8F0FE] rounded-md outline-none p-4"
+            type="file"
+          />
+          <a
+            className="bg-first-primary p-3 text-white font-bold rounded-md w-[400px]"
+            target="_blank"
+            href="http://localhost:3000/"
+          >
+            Generate contract
+          </a>
           <button
             type="submit"
             className="bg-first-primary p-3 text-white font-bold rounded-md w-[400px]"

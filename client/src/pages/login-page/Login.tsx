@@ -24,7 +24,7 @@ function Login() {
 
   return (
     <div className="min-h-lvh flex w-full justify-center">
-      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center items-center">
+      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center items-center pb-12">
         <form
           onSubmit={handleSubmit}
           className="p-4 flex flex-wrap-reverse items-center"

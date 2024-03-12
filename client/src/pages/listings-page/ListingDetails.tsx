@@ -53,13 +53,16 @@ function ListingDetails() {
             parking, fitness center access. Close to shops and dining. Key
             Features: Modern design City views Open-concept layout Ensuite
             master bedroom Second bedroom or office In-unit laundry Secure
-            parking Fitness center access Near shops and dining Location:
-            [Insert Neighborhood/City], [Insert Country] Price: [Insert Price]
-            Contact Information: [Insert Contact Details]
+            parking Fitness center access Near shops and dining Location.
           </p>
         </div>
         <div className="w-full flex justify-end max-w-5xl">
-          <button className="bg-first-primary p-3 text-white rounded-md">
+          <button
+            className="bg-first-primary p-3 text-white rounded-md"
+            onClick={() => {
+              alert("seller has been notified of your interest");
+            }}
+          >
             Contact Owner
           </button>
         </div>

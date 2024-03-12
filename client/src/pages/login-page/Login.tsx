@@ -54,7 +54,8 @@ function Login() {
               type="submit"
               className="bg-first-primary p-3 text-white font-bold rounded-md w-full"
             >
-              Login
+              Logi
+              <Link to="/sellerpage">n</Link>
             </button>
             <p>
               {"Don't Have an Account Yet?"}

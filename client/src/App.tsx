@@ -8,6 +8,7 @@ import SellerPage from "./pages/seller-page/SellerPage";
 import ErrorPage from "./pages/error-page/ErrorPage";
 import PageLayout from "./pages/PageLayout";
 import ListingDetails from "./pages/listings-page/ListingDetails";
+import InterestPage from "./pages/interests-page/InterestPage";
 import "./styles/index.css";
 
 const router = createBrowserRouter([
@@ -65,6 +66,14 @@ const router = createBrowserRouter([
     element: (
       <PageLayout>
         <Login />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/interests",
+    element: (
+      <PageLayout>
+        <InterestPage />
       </PageLayout>
     ),
   },

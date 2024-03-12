@@ -22,51 +22,47 @@ function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center vh-100">
-      <div className="bg-white p-3 rounded w-25">
-        <h2>Login to your RentEase Account</h2>
-        <form onSubmit={handleSubmit}>
-          {/*Email Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Email:</strong>
-            </label>
+    <div className="min-h-lvh flex w-full justify-center">
+      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center items-center">
+        <form
+          onSubmit={handleSubmit}
+          className="border border-red-600 flex flex-col items-center gap-8 p-4"
+        >
+          <div className="w-full h-full flex flex-col gap-7 items-center justify-center ">
+            <h2 className="font-bold text-3xl ">
+              Login to your RentEase Account
+            </h2>
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="email"
-              placeholder="Enter Email"
+              placeholder="Email Address"
               autoComplete="off"
               name="email"
-              className="form-control rounded-0"
               onChange={(e) => setEmail(e.target.value)}
             />
-          </div>
-          {/*Password Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Password:</strong>
-            </label>
             <input
               type="password"
               placeholder="Enter Password"
               name="password"
-              className="form-control rounded-0"
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <button
             type="submit"
-            className="btn btn-success w-100 rounded-0"
-            style={{ background: "#B5A9E8", color: "#39197C" }}
+            className="bg-first-primary p-3 text-white font-bold rounded-md w-full"
           >
             Login
           </button>
-          <p>{"Don't Have an Account Yet?"}</p>
-          <Link
-            to="/signup"
-            className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
-          >
-            Sign Up Here
-          </Link>
+          <p>
+            {"Don't Have an Account Yet?"}
+            <Link
+              to="/signup"
+              className="bg-first-green p-4 tex font-bold rounded-md"
+            >
+              Sign Up Here
+            </Link>
+          </p>
         </form>
       </div>
     </div>

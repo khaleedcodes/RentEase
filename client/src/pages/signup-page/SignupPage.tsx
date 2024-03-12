@@ -53,7 +53,7 @@ function Signup() {
 
   return (
     <div className="min-h-lvh flex w-full justify-center">
-      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center">
+      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center border border-red-500">
         <h2>Create an account with RentEase</h2>
         <p>Accounts may take up to 2 days to process</p>
         <form onSubmit={handleSubmit}>

@@ -75,12 +75,12 @@ const guestListings: ListingType[] = [
   },
   {
     mainListingImageSrc:
-      "https://a0.muscache.com/im/pictures/22f9db09-bac1-44c2-8a7f-316c9b81c776.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-1068372483585017245/original/238335c7-70ff-404c-a95e-2146079f649b.jpeg?im_w=1440",
     otherImages: [
-      "https://a0.muscache.com/im/pictures/dc9a017d-3057-4f84-abca-4778857be19b.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-1083196524620896612/original/50a8cf0b-0795-4192-b2e5-e282e2894c75.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/a4b8e80d-53b3-4a22-857c-2260e81fecf1.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/6ff71444-6d20-4467-b8d6-c144320b9a31.jpg?im_w=480",
-      "https://a0.muscache.com/im/pictures/6ff71444-6d20-4467-b8d6-c144320b9a31.jpg?im_w=480",
-      "https://a0.muscache.com/im/pictures/5f970667-cde7-475c-a0b3-9d89ccc0ada6.jpg?im_w=480",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1023505673463098612/original/c66e401f-3fe0-46b6-a838-98a0618514db.jpeg?im_w=1440",
     ],
     listingLocation: "Vaughan, Canada",
     listingPrice: "$1500",

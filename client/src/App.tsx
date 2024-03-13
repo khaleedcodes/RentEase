@@ -9,6 +9,7 @@ import ErrorPage from "./pages/error-page/ErrorPage";
 import PageLayout from "./pages/PageLayout";
 import ListingDetails from "./pages/listings-page/ListingDetails";
 import InterestPage from "./pages/interests-page/InterestPage";
+import TeamPage from "./pages/team-page/TeamPage";
 import "./styles/index.css";
 
 const router = createBrowserRouter([
@@ -74,6 +75,14 @@ const router = createBrowserRouter([
     element: (
       <PageLayout>
         <InterestPage />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/team",
+    element: (
+      <PageLayout>
+        <TeamPage />
       </PageLayout>
     ),
   },

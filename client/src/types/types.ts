@@ -24,8 +24,17 @@ type FormFieldProps = {
   label: string;
   type: "number" | "text";
 };
+type TeamMembersType = {
+  memberName: string;
+  memberRole: string;
+  memberImage: string;
+  memberGithub: string;
+};
 type ListingProp = ListingType;
 type NavLinkProp = LinkType;
+type TeamMemberCardProps = TeamMembersType & { index: number };
+type TeamMemberImageProps = { memberImage: string, memberGithub: string};
+type TeamMemberInfoProps = { memberName: string; memberRole: string };
 export type {
   PageLayoutProp,
   HamBurgerProps,
@@ -34,4 +43,8 @@ export type {
   ListingType,
   ListingProp,
   FormFieldProps,
+  TeamMembersType,
+  TeamMemberCardProps,
+  TeamMemberImageProps,
+  TeamMemberInfoProps,
 };

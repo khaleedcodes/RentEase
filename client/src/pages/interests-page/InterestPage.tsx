@@ -57,17 +57,20 @@ function InterestPage() {
               );
             }
           )}
-          <input
-            className="bg-[#E8F0FE] rounded-md outline-none p-4"
-            type="file"
-          />
-          <a
-            className="bg-first-primary p-3 text-white font-bold rounded-md w-[400px]"
-            target="_blank"
-            href="http://localhost:3000/"
-          >
-            Generate contract
-          </a>
+          <div className="flex gap-4 items-stretch">
+            <a
+              className="bg-first-primary hover:bg-first-primary-light p-3 text-white font-bold rounded-md w-[300px] flex items-center justify-center"
+              target="_blank"
+              href="http://localhost:3000/"
+            >
+              Generate contract
+            </a>
+            <input
+              className="bg-[#E8F0FE] rounded-md outline-none p-3 w-[300px]"
+              type="file"
+            />
+          </div>
+
           <button
             type="submit"
             className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-3 text-white font-bold rounded-md w-[400px]"

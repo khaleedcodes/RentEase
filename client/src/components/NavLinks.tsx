@@ -2,7 +2,7 @@ import NavLink from "./NavLink";
 import { LinkType } from "../types/types";
 function NavLinks() {
   const links: LinkType[] = [
-    { type: "router", linkName: "Lawyer AI", link: "/about" },
+    { type: "router", linkName: "LawyerAI", link: "/about" },
   ];
   return (
     <div className="flex gap-6 max-sm:justify-center">

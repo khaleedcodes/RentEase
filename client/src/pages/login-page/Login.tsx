@@ -52,7 +52,7 @@ function Login() {
             </div>
             <button
               type="submit"
-              className="bg-first-primary p-3 text-white font-bold rounded-md w-full"
+              className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-3 text-white font-bold rounded-md w-full"
             >
               Logi
               <Link to="/sellerpage">n</Link>

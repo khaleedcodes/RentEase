@@ -38,7 +38,7 @@ function CreateListingForm() {
           />
         </div>
         <button
-          className="bg-first-primary p-3 text-white rounded-md"
+          className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-3 text-white rounded-md"
           type="submit"
         >
           Create listing

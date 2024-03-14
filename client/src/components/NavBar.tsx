@@ -12,8 +12,8 @@ function NavBar() {
             <ProfileIcon />
           </div>
           <div>
-            <button className="bg-first-primary p-2 text-white rounded-md">
-              Lawyer AI
+            <button className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-2 text-white rounded-md">
+              LawyerAI
             </button>
           </div>
         </div>

@@ -84,7 +84,7 @@ function ListingDetails() {
         <div className="w-full flex justify-between max-w-5xl">
           <SellerListingInfo />
           <button
-            className="bg-first-primary p-3 text-white rounded-md"
+            className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-3 text-white rounded-md"
             onClick={() => {
               alert("seller has been notified of your interest");
             }}

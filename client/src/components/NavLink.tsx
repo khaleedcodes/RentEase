@@ -14,7 +14,7 @@ function NavLink({ type, linkName, link }: NavLinkProp) {
       ) : (
         <Link
           to={link}
-          className="hover:text-primary-green transition-all duration-300"
+          className="hover:text-first-primary transition-all duration-300"
         >
           {linkName}
         </Link>

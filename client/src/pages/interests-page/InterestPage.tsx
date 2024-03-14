@@ -70,7 +70,7 @@ function InterestPage() {
           </a>
           <button
             type="submit"
-            className="bg-first-primary p-3 text-white font-bold rounded-md w-[400px]"
+            className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-3 text-white font-bold rounded-md w-[400px]"
             onClick={() => {
               alert('Contract sent to "buyer@gmail.com" successfully');
             }}

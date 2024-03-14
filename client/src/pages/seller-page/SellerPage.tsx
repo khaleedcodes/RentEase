@@ -7,7 +7,7 @@ function SellerPage() {
         <SellerNotificationCard />
         <h1 className="font-bold text-3xl self-start">Your listings</h1>
         <SellerListings />
-        <button className="bg-first-primary p-4 text-white rounded-md">
+        <button className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-4 text-white rounded-md">
           Create new listing
         </button>
       </div>

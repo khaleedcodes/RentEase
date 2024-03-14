@@ -170,8 +170,7 @@ function Signup() {
           </div>
           <button
             type="submit"
-            className="btn btn-success w-100 rounded-0 "
-            style={{ background: "#B5A9E8", color: "#39197C" }}
+            className="btn btn-success w-100 rounded-0 hover:bg-first-primary-light transition-all duration-150 bg-first-primary"
           >
             Register
           </button>

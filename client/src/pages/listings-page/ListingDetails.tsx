@@ -65,7 +65,7 @@ function ListingDetails() {
               </p>
             </div>
             <div>
-              <h2 className="font-bold">{listingPrice} CAD</h2>
+              <h2 className="font-bold text-lg">{listingPrice} CAD</h2>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ function ListingDetails() {
               alert("seller has been notified of your interest");
             }}
           >
-            Contact Owner
+            Contact Seller
           </button>
         </div>
       </div>

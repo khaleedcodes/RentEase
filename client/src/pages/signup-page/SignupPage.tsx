@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import signupImage from "../../assets/images/signup.png";
+import IdentificationIcon from "../../assets/icons/IdentificationIcon";
 
 function Signup() {
   const [firstName, setFirstName] = useState("");
@@ -53,135 +55,128 @@ function Signup() {
 
   return (
     <div className="min-h-lvh flex w-full justify-center">
-      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center border border-red-500">
-        <h2>Create an account with RentEase</h2>
-        <p>Accounts may take up to 2 days to process</p>
-        <form onSubmit={handleSubmit}>
-          {/* Account Type Select */}
-          <div className="mb-3">
-            <label htmlFor="accountType">
-              <strong>Account Type: </strong>
-            </label>
-            <select
-              id="accountType"
-              value={accountType}
-              onChange={(e) => setAccountType(e.target.value)}
-            >
-              <option value="Client">Client</option>
-              <option value="Homeowner">Homeowner</option>
-            </select>
-          </div>
-          {/*First Name Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>First Name:</strong>
-            </label>
+      <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center items-center">
+        <h2 className="font-bold text-3xl ">
+          Create a <span className="text-first-primary">Rentease</span> Account
+        </h2>
+        <div className="flex flex-wrap-reverse justify-center items-center">
+          <form
+            onSubmit={handleSubmit}
+            className="p-4 flex flex-wrap-reverse flex-col items-center gap-8 grow basis-96"
+          >
+            {/* Account Type Select */}
+            <div className="bg-first-secondary flex w-full min-h-11 rounded-md outline-none pl-10 items-center border-none gap-4">
+              <label htmlFor="accountType">Account Type:</label>
+              <select
+                className="border-none outline-none"
+                id="accountType"
+                value={accountType}
+                onChange={(e) => setAccountType(e.target.value)}
+              >
+                <option value="Client">Client</option>
+                <option value="Homeowner">Homeowner</option>
+              </select>
+            </div>
+            {/*First Name Field*/}
+
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="text"
-              placeholder="Enter First Name"
+              placeholder="First Name"
               autoComplete="off"
               name="email"
-              className="form-control rounded-0"
               onChange={(e) => setFirstName(e.target.value)}
             />
-          </div>
-          {/*Last Name Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Last Name:</strong>
-            </label>
+            {/*Last Name Field*/}
+
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="text"
-              placeholder="Enter Last Name"
+              placeholder=" Last Name"
               autoComplete="off"
               name="email"
-              className="form-control rounded-0"
               onChange={(e) => setLastName(e.target.value)}
             />
-          </div>
-          {/*Email Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Email:</strong>
-            </label>
+            {/*Email Field*/}
+
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="email"
-              placeholder="Enter Email"
+              placeholder="Email Address"
               autoComplete="off"
               name="email"
-              className="form-control rounded-0"
               onChange={(e) => setEmail(e.target.value)}
             />
-          </div>
-          {/*Address Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Current Address:</strong>
-            </label>
+            {/*Address Field*/}
+
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="address"
-              placeholder="Enter Current Address"
+              placeholder="Current Address"
               autoComplete="off"
               name="address"
-              className="form-control rounded-0"
               onChange={(e) => setAddress(e.target.value)}
             />
-          </div>
-          {/*Password Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Password:</strong>
-            </label>
+            {/*Password Field*/}
+
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="password"
-              placeholder="Enter Password"
+              placeholder="Password"
               name="password"
-              className="form-control rounded-0"
               onChange={(e) => setPassword(e.target.value)}
             />
-          </div>
-          {/*Phone Field*/}
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Phone:</strong>
-            </label>
+            {/*Phone Field*/}
+
             <input
+              className="bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10"
               type="phone"
-              placeholder="Enter Phone Number"
+              placeholder="Phone Number"
               name="phone"
-              className="form-control rounded-0"
               onChange={(e) => setPhone(e.target.value)}
             />
-          </div>
-          <div>
-            <div className="mb-3">
-              <label htmlFor="email">
-                <strong>Upload Valid Government ID Here:</strong>
-              </label>
-              <input accept="image/*" type="file" onChange={convertToBase64} />
+            <div className="flex items-center bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10">
+              <div className="flex gap-4 items-center">
+                <div className="flex gap-2">
+                  <IdentificationIcon />
+                  <label htmlFor="email">
+                    <p className="font-bold">Valid Government ID Here:</p>
+                  </label>
+                </div>
 
-              {/*Preview the image being submitted*/}
-              {image == "" || image == null ? (
-                ""
-              ) : (
-                <img width={300} src={image} />
-              )}
+                <input
+                  accept="image/*"
+                  type="file"
+                  onChange={convertToBase64}
+                />
+
+                {/*Preview the image being submitted*/}
+                {image == "" || image == null ? (
+                  ""
+                ) : (
+                  <img width={300} src={image} />
+                )}
+              </div>
             </div>
+            <button
+              type="submit"
+              className="bg-first-primary hover:bg-first-primary-light transition-all duration-150 p-3 text-white font-bold rounded-md w-full"
+            >
+              Register
+            </button>
+            <div className="flex gap-4">
+              <p>
+                Already Have an Account?{" "}
+                <Link to="/login" className="font-bold w-100">
+                  Log In Here
+                </Link>
+              </p>
+            </div>
+          </form>
+          <div className="basis-96 grow">
+            <img src={signupImage} alt="signup" />
           </div>
-          <button
-            type="submit"
-            className="btn btn-success w-100 rounded-0 hover:bg-first-primary-light transition-all duration-150 bg-first-primary"
-          >
-            Register
-          </button>
-          <p>Already Have an Account</p>
-          <Link
-            to="/login"
-            className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none "
-          >
-            Or Sign In Here
-          </Link>
-        </form>
+        </div>
       </div>
     </div>
   );

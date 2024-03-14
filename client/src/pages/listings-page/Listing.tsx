@@ -10,9 +10,9 @@ function Listing({
 }: ListingProp) {
   return (
     <>
-      <div>
+      <div className="h-[254px]">
         <img
-          className="rounded-tl-xl rounded-xl w-full h-full"
+          className="rounded-tl-xl rounded-xl w-full h-full object-cover"
           src={mainListingImageSrc}
         />
       </div>

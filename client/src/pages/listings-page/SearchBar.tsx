@@ -1,4 +1,5 @@
 import SearchIcon from "../../assets/icons/SearchIcon";
+import FilterIcon from "../../assets/icons/FilterIcon";
 
 function SearchBar() {
   return (
@@ -10,6 +11,7 @@ function SearchBar() {
           className="w-full min-h-8 border-none outline-none"
         ></input>
       </form>
+      <FilterIcon />
     </div>
   );
 }

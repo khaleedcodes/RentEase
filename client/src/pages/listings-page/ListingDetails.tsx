@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { listings } from "../../data/listingsdata";
+import SellerListingInfo from "./SellerListingInfo";
 
 function ListingDetails() {
   let { id } = useParams();
@@ -56,7 +57,8 @@ function ListingDetails() {
             parking Fitness center access Near shops and dining Location.
           </p>
         </div>
-        <div className="w-full flex justify-end max-w-5xl">
+        <div className="w-full flex justify-between max-w-5xl">
+          <SellerListingInfo />
           <button
             className="bg-first-primary p-3 text-white rounded-md"
             onClick={() => {

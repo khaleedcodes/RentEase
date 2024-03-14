@@ -1,5 +1,5 @@
 import WordMark from "./WordMark";
-import Nigeria from "../assets/icons/ProfileIcon";
+import ProfileIcon from "../assets/icons/ProfileIcon";
 import NotificationIcon from "../assets/icons/NotificationIcon";
 function NavBar() {
   return (
@@ -9,7 +9,7 @@ function NavBar() {
         <div className="flex gap-8 items-center">
           <div className="flex items-center gap-4">
             <NotificationIcon />
-            <Nigeria />
+            <ProfileIcon />
           </div>
           <div>
             <button className="bg-first-primary p-2 text-white rounded-md">

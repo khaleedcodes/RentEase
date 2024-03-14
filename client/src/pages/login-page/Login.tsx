@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import signupImage from "../../assets/images/signup.png";
+import loginImage from "../../assets/images/login.png";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -68,7 +68,7 @@ function Login() {
             </p>
           </div>
           <div className="basis-96 grow">
-            <img src={signupImage} alt="signup" />
+            <img src={loginImage} alt="signup" />
           </div>
         </form>
       </div>

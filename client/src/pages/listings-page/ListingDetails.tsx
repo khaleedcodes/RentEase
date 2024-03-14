@@ -17,7 +17,7 @@ function ListingDetails() {
   let { id } = useParams();
   id = id ? id : "0";
   if (!listings) {
-    return <div>Loading..</div>;
+    return <div className="min-h-lvh"></div>;
   }
 
   const {

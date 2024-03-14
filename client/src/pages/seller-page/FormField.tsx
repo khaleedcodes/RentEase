@@ -1,7 +1,6 @@
 import { FormFieldProps } from "../../types/types";
 
 function FormField({ type, icon: Icon, label }: FormFieldProps) {
-  console.log(type);
   return (
     <div className="flex flex-col basis-96 grow gap-2">
       <label className="flex gap-2 font-bold">

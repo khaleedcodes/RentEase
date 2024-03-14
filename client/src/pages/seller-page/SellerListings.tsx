@@ -1,8 +1,17 @@
 import Listing from "../listings-page/Listing";
 import { Link } from "react-router-dom";
-import {listings} from "../../data/listingsdata";
-
+import { useState, useEffect } from "react";
+import { ListingType } from "../../types/types";
+import { getListings } from "../../data/listingsdata";
 function Listings() {
+  const [listings, setListings] = useState<ListingType[]>([]);
+  useEffect(() => {
+    const geData = async () => {
+      const listings = await getListings();
+      setListings(listings);
+    };
+    geData();
+  }, []);
   return (
     <div className="flex gap-8 p-4 flex-wrap justify-center">
       {listings.map(

@@ -1,10 +1,24 @@
 import { useParams } from "react-router-dom";
-import { listings } from "../../data/listingsdata";
 import SellerListingInfo from "./SellerListingInfo";
+import { getListings } from "../../data/listingsdata";
+import { useState, useEffect } from "react";
+import { ListingType } from "../../types/types";
 
 function ListingDetails() {
+  const [listings, setListings] = useState<ListingType[]>();
+  useEffect(() => {
+    const getData = async () => {
+      const listings = await getListings();
+      setListings(listings);
+    };
+    getData();
+  });
+
   let { id } = useParams();
   id = id ? id : "0";
+  if (!listings) {
+    return <div>Loading..</div>;
+  }
 
   const {
     mainListingImageSrc,

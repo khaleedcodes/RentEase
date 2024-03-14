@@ -1,8 +1,19 @@
 import Listing from "./Listing";
 import { Link } from "react-router-dom";
-import {listings} from "../../data/listingsdata";
+import { getListings } from "../../data/listingsdata";
+import { ListingType } from "../../types/types";
+import { useState, useEffect } from "react";
+// import axios from "axios";
 
 function Listings() {
+  const [listings, setListings] = useState<ListingType[]>([]);
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getListings();
+      setListings(data);
+    };
+    getData();
+  }, []);
   return (
     <div className="flex gap-8 p-4 flex-wrap justify-center">
       {listings.map(
@@ -17,6 +28,7 @@ function Listings() {
           },
           index
         ) => {
+          console.log(index);
           return (
             <Link
               to={`/listingdetails/${index}`}

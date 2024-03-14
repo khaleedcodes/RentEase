@@ -1,8 +1,17 @@
 import Listing from "../listings-page/Listing";
 import { Link } from "react-router-dom";
-import { guestListings } from "../../data/listingsdata";
+import { useState, useEffect } from "react";
+import { getListings } from "../../data/listingsdata";
 
 function GuestListings() {
+  const [guestListings, setGuestListings] = useState([]);
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getListings();
+      setGuestListings(data);
+    };
+    getData();
+  }, []);
   return (
     <div className="flex gap-8 p-4 flex-wrap justify-center">
       {guestListings.map(

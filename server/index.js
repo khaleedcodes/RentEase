@@ -22,7 +22,7 @@ app.post("/login", (req, res) => {
     if (user) {
       console.log(user.accountType);
       if (user.password === password) {
-        res.json("Success");
+        res.json({ message: "Success", accountType: user.accountType }); // Include account type in response
       } else {
         res.json("The password is incorrect");
       }

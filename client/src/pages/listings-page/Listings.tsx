@@ -17,25 +17,24 @@ function Listings() {
   return (
     <div className="flex gap-8 p-4 flex-wrap justify-center">
       {listings.map(
-        (
-          {
-            mainListingImageSrc,
-            otherImages,
-            listingLocation,
-            listingPrice,
-            NoOfBed,
-            NoOfBath,
-          },
-          index
-        ) => {
-          console.log(index);
+        ({
+          _id,
+          mainListingImageSrc,
+          otherImages,
+          listingLocation,
+          listingPrice,
+          NoOfBed,
+          NoOfBath,
+        }) => {
+          console.log(_id);
           return (
             <Link
-              to={`/listingdetails/${index}`}
-              key={index}
+              to={`/listingdetails/${_id}`}
+              key={_id}
               className="rounded-xl flex flex-col gap-3 basis-96"
             >
               <Listing
+                _id={_id}
                 mainListingImageSrc={mainListingImageSrc}
                 otherImages={otherImages}
                 listingLocation={listingLocation}

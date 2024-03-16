@@ -12,6 +12,7 @@ type LinkType = {
   link: string;
 };
 type ListingType = {
+  _id: number;
   mainListingImageSrc: string;
   otherImages: string[];
   listingLocation: string;
@@ -33,7 +34,7 @@ type TeamMembersType = {
 type ListingProp = ListingType;
 type NavLinkProp = LinkType;
 type TeamMemberCardProps = TeamMembersType & { index: number };
-type TeamMemberImageProps = { memberImage: string, memberGithub: string};
+type TeamMemberImageProps = { memberImage: string; memberGithub: string };
 type TeamMemberInfoProps = { memberName: string; memberRole: string };
 export type {
   PageLayoutProp,

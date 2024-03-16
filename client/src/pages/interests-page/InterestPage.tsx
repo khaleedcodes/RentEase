@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const listings: ListingType[] = [
   {
+    _id: "65f361d32d27f827708e9c67",
     mainListingImageSrc:
       "https://a0.muscache.com/im/pictures/miso/Hosting-1068372483585017245/original/238335c7-70ff-404c-a95e-2146079f649b.jpeg?im_w=1440",
     otherImages: [
@@ -28,24 +29,24 @@ function InterestPage() {
             interest in your property at vaughan Canada.
           </p>
           {listings.map(
-            (
-              {
-                mainListingImageSrc,
-                otherImages,
-                listingLocation,
-                listingPrice,
-                NoOfBed,
-                NoOfBath,
-              },
-              index
-            ) => {
+            ({
+              _id,
+              mainListingImageSrc,
+              otherImages,
+              listingLocation,
+              listingPrice,
+              NoOfBed,
+              NoOfBath,
+            }) => {
+              console.log(_id);
               return (
                 <Link
-                  to={`/listingdetails/${index}`}
-                  key={index}
-                  className="rounded-xl flex flex-col gap-3 max-w-md"
+                  to={`/listingdetails/${_id}`}
+                  key={_id}
+                  className="rounded-xl flex flex-col gap-3 basis-96"
                 >
                   <Listing
+                    _id={_id}
                     mainListingImageSrc={mainListingImageSrc}
                     otherImages={otherImages}
                     listingLocation={listingLocation}

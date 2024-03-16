@@ -20,6 +20,7 @@ app.post("/login", (req, res) => {
   const { email, password } = req.body;
   RegisterModel.findOne({ email: email }).then((user) => {
     if (user) {
+      console.log(user.accountType);
       if (user.password === password) {
         res.json("Success");
       } else {

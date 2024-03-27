@@ -19,8 +19,8 @@ function Signup() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/signup", {
-        // .post("https://renteaseserver.onrender.com/signup", {
+      .post("https://rentease-b5mm.onrender.com/signup", {
+        // .post("http://localhost:3001/signup", {
         accountType,
         firstName,
         lastName,

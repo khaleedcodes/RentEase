@@ -12,7 +12,8 @@ function Login() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/login", { email, password })
+      .post("https://rentease-b5mm.onrender.com/login", { email, password })
+      // .post("http://localhost:3001/login", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data.message === "Success") {

@@ -37,13 +37,13 @@ function TeamMembers() {
     },
   ];
   return (
-    <div className="w-full h-full flex flex-col gap-6">
+    <div className="w-full h-full flex flex-col gap-10">
       <div className="text-center">
         <h1 className="font-bold text-3xl">
           The <span className="text-first-primary">team.</span>
         </h1>
       </div>
-      <div className="gap-6 flex flex-col">
+      <div className="gap-20 flex flex-col">
         {teamMembers.map(
           ({ memberName, memberImage, memberGithub, memberRole }, index) => {
             return (

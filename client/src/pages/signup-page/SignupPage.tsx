@@ -20,7 +20,6 @@ function Signup() {
     e.preventDefault();
     axios
       .post("https://rentease-b5mm.onrender.com/signup", {
-        // .post("http://localhost:3001/signup", {
         accountType,
         firstName,
         lastName,

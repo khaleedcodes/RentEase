@@ -3,7 +3,6 @@ import HamburgerButton from "./HamburgerButton";
 import NavLinks from "./NavLinks";
 import WordMark from "./WordMark";
 import NotificationIcon from "../assets/icons/NotificationIcon";
-import ProfileIcon from "../assets/icons/ProfileIcon";
 
 function MobileNavBar() {
   const [isLinkActive, setIsLinkActive] = useState(false);
@@ -34,7 +33,6 @@ function MobileNavBar() {
           <div className="flex gap-4">
             <div className="flex gap-3 items-center">
               <NotificationIcon />
-              <ProfileIcon />
             </div>
             <HamburgerButton onClick={toggleIsLinkActive} />
           </div>

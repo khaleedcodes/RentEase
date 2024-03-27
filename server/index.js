@@ -11,6 +11,7 @@ app.use(express.json());
 const listingsMongoUrl =
   "mongodb+srv://FrancescaGalang:zIxWkoXIOgieSd4B@cluster0.qywthgw.mongodb.net/rentease";
 mongoose.connect(listingsMongoUrl);
+
 app.get("/getListings", (req, res) => {
   ListingModel.find()
     .then((listings) => res.json(listings))

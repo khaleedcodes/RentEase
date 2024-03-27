@@ -25,7 +25,7 @@ function MobileNavBar() {
     <div className="flex justify-center sm:hidden sticky top-0 overflow-hidden z-10 bg-white">
       <nav
         className={`flex p-4 flex-col max-w-7xl w-full transition-all gap-4 duration-300 ${
-          isLinkActive ? "h-[90px]" : "h-[60px]"
+          isLinkActive ? "h-[100px]" : "h-[60px]"
         }`}
       >
         <div className="flex gap-5 items-center w-full justify-between">

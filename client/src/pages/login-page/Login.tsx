@@ -37,7 +37,7 @@ function Login() {
         >
           <div className="flex flex-col items-center gap-8 grow basis-96">
             <div className="w-full flex flex-col gap-7 items-center justify-center ">
-              <h2 className="font-bold text-3xl ">
+              <h2 className="font-bold text-3xl text-center">
                 Login to your{" "}
                 <span className="text-first-primary">Rentease</span> Account
               </h2>

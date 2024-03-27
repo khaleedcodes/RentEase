@@ -139,7 +139,7 @@ function Signup() {
                 onChange={(e) => setPhone(e.target.value)}
               />
               <div className="flex items-start pl-10 bg-first-secondary w-full min-h-11 rounded-md outline-none border-none justify-center gap-2 flex-wrap flex-col p-2">
-                <div className="flex gap-2 items-center justify-center border">
+                <div className="flex gap-2 items-center justify-center">
                   <IdentificationIcon />
                   <label className="text-[#71767b]" htmlFor="email">
                     Valid Government ID Here:

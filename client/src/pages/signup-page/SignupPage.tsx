@@ -68,7 +68,7 @@ function Signup() {
               </h2>
 
               {/* Account Type Select */}
-              <div className="bg-first-secondary flex w-full min-h-11 rounded-md outline-none pl-10 items-center border-none gap-4">
+              <div className="bg-first-secondary flex w-full min-h-11 rounded-md outline-none pl-10 items-center border-none gap-4 flex-wrap">
                 <label htmlFor="accountType">Account Type:</label>
                 <select
                   className="border-none outline-none"

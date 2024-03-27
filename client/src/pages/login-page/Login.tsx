@@ -13,7 +13,6 @@ function Login() {
     e.preventDefault();
     axios
       .post("http://localhost:3001/login", { email, password })
-      // .post("https://renteaseserver.onrender.com/login", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data.message === "Success") {

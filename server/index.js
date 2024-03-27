@@ -8,7 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const listingsMongoUrl = "mongodb://127.0.0.1:27017/rentease";
+const listingsMongoUrl =
+  "mongodb+srv://FrancescaGalang:zIxWkoXIOgieSd4B@cluster0.qywthgw.mongodb.net/rentease";
 mongoose.connect(listingsMongoUrl);
 app.get("/getListings", (req, res) => {
   ListingModel.find()

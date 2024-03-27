@@ -138,27 +138,7 @@ function Signup() {
                 name="phone"
                 onChange={(e) => setPhone(e.target.value)}
               />
-              <div className="flex items-center bg-first-secondary w-full min-h-11 rounded-md outline-none border-none pl-10 gap-4 flex-wrap">
-                  <div className="flex gap-2">
-                    <IdentificationIcon />
-                    <label htmlFor="email">
-                      <p className="font-bold">Valid Government ID Here:</p>
-                    </label>
-                  </div>
 
-                  <input
-                    accept="image/*"
-                    type="file"
-                    onChange={convertToBase64}
-                  />
-
-                  {/*Preview the image being submitted*/}
-                  {image == "" || image == null ? (
-                    ""
-                  ) : (
-                    <img width={300} src={image} />
-                  )}
-              </div>
             </div>
             <button
               type="submit"

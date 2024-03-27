@@ -87,7 +87,7 @@ function Signup() {
                 type="text"
                 placeholder="First Name"
                 autoComplete="off"
-                name="First Name"
+                name="name"
                 onChange={(e) => setFirstName(e.target.value)}
               />
               {/*Last Name Field*/}
@@ -97,7 +97,7 @@ function Signup() {
                 type="text"
                 placeholder=" Last Name"
                 autoComplete="off"
-                name="Last Name"
+                name="name"
                 onChange={(e) => setLastName(e.target.value)}
               />
               {/*Email Field*/}

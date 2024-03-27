@@ -54,21 +54,21 @@ function Signup() {
   }
 
   return (
-    <div className="min-h-lvh flex w-full justify-center">
+    <div className="min-h-lvh flex w-full justify-center border border-blue-500">
       <div className=" p-3 max-w-screen-xl w-full gap-8 flex flex-col justify-center items-center pb-12">
         <form
           onSubmit={handleSubmit}
           className="p-4 flex flex-wrap-reverse items-center"
         >
           <div className="flex flex-col items-center gap-8 grow basis-96">
-            <div className="w-full flex flex-col gap-7 items-center justify-center ">
+            <div className="w-full flex flex-col gap-7 items-center justify-center">
               <h2 className="font-bold text-3xl text-center">
                 Create a <span className="text-first-primary">Rentease</span>{" "}
                 Account
               </h2>
 
               {/* Account Type Select */}
-              <div className="bg-first-secondary flex w-full min-h-11 rounded-md outline-none pl-10 items-center border-none gap-4 flex-wrap">
+              <div className="bg-first-secondary flex w-full min-h-11 rounded-md outline-none pl-10 items-center border-none gap-2 p-2 flex-wrap">
                 <label htmlFor="accountType">Account Type:</label>
                 <select
                   className="border-none outline-none"
@@ -139,10 +139,10 @@ function Signup() {
                 onChange={(e) => setPhone(e.target.value)}
               />
               <div className="flex items-start pl-10 bg-first-secondary w-full min-h-11 rounded-md outline-none border-none justify-center gap-2 flex-wrap flex-col p-2">
-                <div className="flex gap-2 items-center justify-center">
+                <div className="flex gap-2 items-center justify-center border">
                   <IdentificationIcon />
-                  <label htmlFor="email">
-                    <p className="text-[#71767b]">Valid Government ID Here:</p>
+                  <label className="text-[#71767b]" htmlFor="email">
+                    Valid Government ID Here:
                   </label>
                 </div>
 
@@ -150,7 +150,7 @@ function Signup() {
                   accept="image/*"
                   type="file"
                   onChange={convertToBase64}
-                  className="text-[#71767b]"
+                  className="text-[#71767b] w-full"
                 />
               </div>
             </div>

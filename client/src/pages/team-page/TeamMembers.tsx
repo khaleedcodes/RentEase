@@ -1,6 +1,7 @@
 import { TeamMembersType } from "../../types/types";
 import TeamMemberCard from "./TeamMemberCard";
 import khaleedAvatar from "../../assets/images/khaleed-avatar.jpeg";
+import francescaAvatar from "../../assets/images/francesca-avatar.jpeg";
 
 function TeamMembers() {
   const teamMembers: TeamMembersType[] = [
@@ -13,7 +14,7 @@ function TeamMembers() {
     {
       memberName: "Francesca Ysabelle Galang",
       memberRole: "Frontend Developer",
-      memberImage: khaleedAvatar,
+      memberImage: francescaAvatar,
       memberGithub: "https://github.com/frankookies",
     },
     {
